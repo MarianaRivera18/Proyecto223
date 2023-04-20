@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">{{ __('Show') }} Disco</span>
+                            <span class="card-title">{{ __('Show') }} </span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-primary" href="{{ route('discos.index') }}"> {{ __('Back') }}</a>
@@ -28,10 +28,7 @@
                             <strong>Categoria:</strong>
                             {{ $disco->categoria }}
                         </div>
-                        <div class="form-group">
-                            <strong>Cantante:</strong>
-                            {{ $disco->cantante }}
-                        </div>
+                       
                         <div class="form-group">
                             <strong>Precio:</strong>
                             {{ $disco->precio }}

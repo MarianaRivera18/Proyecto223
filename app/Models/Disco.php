@@ -24,7 +24,7 @@ class Disco extends Model
     static $rules = [
 		'nombre' => 'required',
 		'categoria' => 'required',
-		'cantante' => 'required',
+		
 		'precio' => 'required',
     ];
 
@@ -35,7 +35,7 @@ class Disco extends Model
      *
      * @var array
      */
-    protected $fillable = ['nombre','categoria','cantante','precio'];
+    protected $fillable = ['nombre','categoria','precio'];
 
 
 

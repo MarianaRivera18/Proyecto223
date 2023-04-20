@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ __('Create') }} Disco
+    {{ __('Create') }} 
 @endsection
 
 @section('content')
@@ -11,9 +11,9 @@
 
                 @includeif('partials.errors')
 
-                <div class="card card-default">
-                    <div class="card-header">
-                        <span class="card-title">{{ __('Ingresar nuevo') }} disco</span>
+                <center><div style="height:556; width:446px"  class="card card-default">
+                    <div  class="card-header">
+                        <span class="card-title">{{ __('Ingresar nuevo') }} </span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ url('discos.store') }}"  role="form" enctype="multipart/form-data">

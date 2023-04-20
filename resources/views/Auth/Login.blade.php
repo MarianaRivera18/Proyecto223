@@ -10,24 +10,25 @@
         <div class="row mb-3"></div>
         <div class="row mb-3"></div>
         <div class="row mb-3"></div>
-        
-            <div class="card">
-                <div class="card-body">
-                <div class="row mb-3"></div>
-                        <div class="row mb-3"></div>
+    
+        <center>     <form style=" width:656px" method="POST" action="{{ route('session') }}">
+                   <div class="card justify-content-center" style="height:256; width:556px"> 
+                <div class="row mb-3 justify-content-center"></div>
+              <div class="card-body justify-content-center">
                         <div class="row mb-3">
                             <div class="col-md-4"></div>
-                            <div class="col-md-4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Faf%2FSquare_Enix_logo.svg%2F2560px-Square_Enix_logo.svg.png&f=1&nofb=1&ipt=510f7cb67c4dbb07eaf36e2169a4d10423cefad55131305750c7b13e6158e341&ipo=images"
-                                 alt="" style="height:256; width:256px"></div>
-                            <div class="col-md-4"></div>
-                        </div>
+                              
+                  <center> <div class="col-md-4 "><img src="{{ asset('image/Club.png') }}"
+                 style="height:556; width:256px "> <img src="{{ asset('image/Club.png') }}"
+                 style="height:556; width:256px "></div>
+                       
                         <div class="row mb-3"></div>
                         <div class="row mb-3"></div>
-                    <form method="POST" action="{{ route('session') }}">
+                    <form  method="POST" action="{{ route('session') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo electronico') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo ') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -54,9 +55,9 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="row mb-0 ">
+                            <div class="col-md-8 offset-md-4 ">
+                                <button type="submit" class="btn btn-dark ">
                                     {{ __('Iniciar Sesion') }}
                                 </button>
                             </div>

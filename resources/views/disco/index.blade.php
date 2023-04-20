@@ -1,23 +1,21 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Disco
+ 
 @endsection
 
 @section('content')
-    <div class="container-fluid">
+    <div style="height:556; width:556px "  class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                            <span id="card_title">
-                                {{ __('Discos') }}
-                            </span>
+                           
 
                              <div class="float-right">
-                                <a href="{{ route('discos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('discos.create') }}" class="btn btn-dark btn-sm float-right"  data-placement="left">
                                   {{ __('Agregar nuevo') }}
                                 </a>
                               </div>
@@ -29,16 +27,16 @@
                         </div>
                     @endif
 
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-hover">
+                    <div style="height:556; width:556px "  class="card-body">
+                        <div style="height:556; width:500px "  class="table-responsive">
+                            <table  class="table table-striped table-hover ">
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
                                         
 										<th>Nombre</th>
 										<th>Categoria</th>
-										<th>Cantante</th>
+									
 										<th>Precio</th>
 
                                         <th></th>
@@ -51,7 +49,7 @@
                                             
 											<td>{{ $disco->nombre }}</td>
 											<td>{{ $disco->categoria }}</td>
-											<td>{{ $disco->cantante }}</td>
+											
 											<td>{{ $disco->precio }}</td>
 
                                             <td>

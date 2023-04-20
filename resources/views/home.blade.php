@@ -13,7 +13,7 @@
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('discos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('discos.create') }}" class="btn btn-secondary btn-sm float-right"  data-placement="left">
                                   {{ __('Agregar nuevo') }}
                                 </a>
                               </div>
